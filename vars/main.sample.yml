@@ -1,0 +1,21 @@
+---
+vsphere_host: "vCenter-address"
+vsphere_user: "{{ vcenter_user }}"
+vsphere_password: "{{ vcenter_pass }}"
+vsphere_datacenter: "datacenter-name"
+vsphere_datastore: "datastore-name"
+vsphere_folder: "/"
+esxi_host: "192.168.1.2"
+guest_network: "vm-network-name"
+guest_netmask: 255.255.255.0
+guest_gateway: 192.168.1.1
+guest_dns_server: 192.168.1.3
+guest_domain_name: domain.local
+guest_id: ubuntu64Guest
+guest_memory: 4096
+guest_vcpu: 2
+guest_template: "guest-tamplate-name"
+guest_password: "{{ guest_pass }}"
+ansible_become_pass: "{{ guest_pass }}"
+notes: "Deployed with ansible"
+ansible_host_group: "VM"
